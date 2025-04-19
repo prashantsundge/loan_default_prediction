@@ -81,17 +81,52 @@ From raw data ingestion to EDA, class balancing, feature analysis, and future de
 7. **Dimensionality Reduction**
     - Applied `PCA` for exploratory feature-space visualization.
     - Applied `t-SNE` for non-linear dimensionality reduction to understand class separation.
+---
 
-8. **Next Steps (Upcoming)**
-    - Feature Engineering.
-    - Data Preprocessing: Encoding, Scaling, Normalization.
-    - ML Model Building: Logistic Regression, RandomForest, XGBoost, etc.
-    - Evaluation: Accuracy, Precision, Recall, ROC AUC.
-    - Model Deployment (optional): Streamlit / Flask.
+
+8. 💡 Data Preprocessing  
+   - Applied Encoding for Categorical Features.  
+   - Applied Scaling and Standardization for Numerical Features.  
+   - Validated data types and consistency post-processing.  
+   - Exported the preprocessed dataset for model training.
 
 ---
 
-✅ **Status:**  
-EDA Completed. Balanced data prepared. Moving to Preprocessing & Modeling phase.
+9. 🤖 Model Training  
+   - Selected **RandomForest Classifier** as the baseline model.  
+   - Trained the model on the balanced and preprocessed dataset.  
+   - Achieved initial baseline **Accuracy: 68%**.  
+   - Saved the trained model in the `artifacts/` directory.  
 
+---
+
+10. 📊 Model Evaluation  
+    - Created a dedicated `model_evaluator.py` for:  
+      - Accuracy  
+      - Precision  
+      - Recall  
+      - F1-Score  
+      - ROC-AUC curve insights.  
+    - Compared the model predictions vs actuals.  
+    - Logged all evaluation metrics for reproducibility.  
+
+---
+
+11. 💡 Observations  
+    - RandomForest performed decently with an accuracy of ~68%.  
+    - Some features required additional engineering for future improvements.  
+    - Large model files were compressed (due to GitHub’s file size restrictions) for repository management.
+
+---
+
+12. 🏁 Next Steps  
+    - [ ] Hyperparameter Tuning for RandomForest & other models.  
+    - [ ] Model Comparison: Logistic Regression, XGBoost, LightGBM.  
+    - [ ] Model Deployment (Optional): Streamlit or Flask.  
+    - [ ] Write unit tests for modules.  
+    - [ ] Finalize Documentation and Flow Diagram.
+
+---
+
+✨ _The project is now transitioning from development to model optimization & deployment phase!_ 🚀
 
